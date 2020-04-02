@@ -139,22 +139,22 @@ if (!class_exists('WC_Payjp_Gateway')) {
                     'default' => 'yes',
                     'desc_tip' => true,
                 ),
-                'test_publishable_key' => array(
-                    'title' => __('テスト公開鍵', 'woocommerce-payjp'),
-                    'type' => 'text'
-                ),
                 'test_private_key' => array(
                     'title' => __('テスト秘密鍵', 'woocommerce-payjp'),
                     'type' => 'password',
                 ),
-                'publishable_key' => array(
-                    'title' => __('本番公開鍵', 'woocommerce-payjp'),
+                'test_publishable_key' => array(
+                    'title' => __('テスト公開鍵', 'woocommerce-payjp'),
                     'type' => 'text'
                 ),
                 'private_key' => array(
                     'title' => __('本番秘密鍵', 'woocommerce-payjp'),
                     'type' => 'password'
-                )
+                ),
+                'publishable_key' => array(
+                    'title' => __('本番公開鍵', 'woocommerce-payjp'),
+                    'type' => 'text'
+                ),
             );
         }
 
