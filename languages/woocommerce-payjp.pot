@@ -1,25 +1,25 @@
 # Copyright (C) 2020 bravemaster619
-# This file is distributed under the same license as the WooCommerce PAY.JP plugin.
+# This file is distributed under the same license as the WooCommerce PAY.JP Payment Gateway plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce PAY.JP 0.1.0\n"
+"Project-Id-Version: WooCommerce PAY.JP Payment Gateway 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woocommerce-payjp\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-04-02T14:15:28+02:00\n"
+"POT-Creation-Date: 2020-04-02T19:26:40+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: woocommerce-payjp\n"
 
 #. Plugin Name of the plugin
-msgid "WooCommerce PAY.JP"
+msgid "WooCommerce PAY.JP Payment Gateway"
 msgstr ""
 
 #. Description of the plugin
-msgid "PAY.JP Payment Plugin for WooCommerce"
+msgid "PAY.JP Payment Gateway Plugin for WooCommerce"
 msgstr ""
 
 #. Author of the plugin
@@ -30,6 +30,99 @@ msgstr ""
 msgid "https://bravemaster619.github.io"
 msgstr ""
 
-#: includes/class-wc-payjp-gateway.php:13
-msgid "It is an online payment service for developers that can easily introduce credit card payment into various services for free."
+#: includes/class-wc-payjp-gateway.php:86
+msgid "様々なサービスにクレジットカード決済を無料で簡単に導入できる開発者向けのオンライン決済サービスです。"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:108
+msgid "別の決済方法をご利用いただくか、管理者にお問い合わせください。"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:115
+msgid "有効/無効"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:116
+msgid "有効 PAY.JP"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:122
+msgid "タイトル"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:124
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:125
+msgid "PAY.JP"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:129
+msgid "説明"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:131
+msgid "This controls the description which the user sees during checkout."
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:132
+msgid "Pay with your credit card PAY.JP payment gateway"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:135
+msgid "テストモード"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:136
+msgid "有効テストモード"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:138
+msgid "Place the payment gateway in test mode using test API keys."
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:143
+msgid "テスト秘密鍵"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:147
+msgid "テスト公開鍵"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:151
+msgid "本番秘密鍵"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:155
+msgid "本番公開鍵"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:169
+msgid "(テストモード)"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:179
+msgid "カード番号"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:184
+#: includes/class-wc-payjp-gateway.php:186
+msgid "セキュリティコード"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:185
+msgid "※カード裏面に記載されている3〜4桁の番号を入力してください"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:189
+msgid "有効期限"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:191
+msgid "（例）2020 年 4 月なら 04/20"
+msgstr ""
+
+#: includes/class-wc-payjp-gateway.php:192
+msgid "月/年"
 msgstr ""
