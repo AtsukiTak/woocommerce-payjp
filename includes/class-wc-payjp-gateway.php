@@ -271,7 +271,6 @@ if (!class_exists('WC_Payjp_Gateway')) {
                 self::log("Charge ID: " . $charge->id);
 
             } catch(\Exception $e) {
-               var_dump($e);
                self::log($e->getMessage(), "error");
                $error_class = get_class($e);
                throw new  $error_class($this->get_error_message($e->getCode()));
