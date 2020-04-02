@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WooCommerce PAY.JP Payment Gateway
  * Description: PAY.JP Payment Gateway Plugin for WooCommerce
- * Version: 0.1.0
+ * Version: 1.0.0
  * Author: bravemaster619
  * Author URI: https://bravemaster619.github.io
  * Text Domain: woocommerce-payjp
@@ -46,11 +46,18 @@ function payjp_missing_dependency_notice() {
     <?php
 }
 
-function check_dependency() {
+function payjp_check_dependency() {
     if (!is_woocommerce_active()) {
         payjp_missing_dependency_notice();
         @trigger_error("WooCommerce PAY.JP requires WooCommerce plugin", E_USER_ERROR);
     }
 }
 
-register_activation_hook(__FILE__, 'check_dependency');
+function payjp_uninstall() {
+    global $wpdb;
+    $wpdb->query( "DELETE FROM $wpdb->options WHERE option_name = 'woocommerce_payjp_settings';" );
+    wp_cache_flush();
+}
+
+register_activation_hook(__FILE__, 'payjp_check_dependency');
+register_uninstall_hook(__FILE__, 'payjp_uninstall');
