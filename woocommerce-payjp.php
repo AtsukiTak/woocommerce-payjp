@@ -35,7 +35,7 @@ if ( is_woocommerce_active() ) {
 }
 
 function payjp_missing_dependency_notice() {
-    echo<<<EOHTML
+    ?>
         <div class="error notice">
                 <p>
                     <strong>Error: </strong>
@@ -43,8 +43,7 @@ function payjp_missing_dependency_notice() {
                     You can download <a href="https://wordpress.org/plugins/woocommerce/" target="_blank">WooCommerce</a> here.
                 </p>
         </div>
-EOHTML;
-
+    <?php
 }
 
 function check_dependency() {
