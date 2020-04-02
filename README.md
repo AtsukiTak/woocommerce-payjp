@@ -5,7 +5,7 @@ WooCommerce Payment Gateway extension for [PAY.JP](https://pay.jp)
 
 - PHP v7.0 or higher
 - WordPress v5.3 or higher
-- WooCommerce v4.0 or higher
+- WooCommerce v3.9.2 or higher
 
 # Features
 
