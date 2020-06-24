@@ -10,11 +10,12 @@
  * @package woocommerce-payjp
  */
 
-function is_woocommerce_active() {
+// prefixed by 'payjp_' to avoid global name confliction.
+function payjp_is_woocommerce_active() {
     return in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) );
 }
 
-if ( is_woocommerce_active() ) {
+if ( payjp_is_woocommerce_active() ) {
 
     require_once __DIR__ . "/vendor/autoload.php";
 
@@ -47,7 +48,7 @@ function payjp_missing_dependency_notice() {
 }
 
 function payjp_check_dependency() {
-    if (!is_woocommerce_active()) {
+    if (!payjp_is_woocommerce_active()) {
         payjp_missing_dependency_notice();
         @trigger_error("WooCommerce PAY.JP requires WooCommerce plugin", E_USER_ERROR);
     }
